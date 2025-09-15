@@ -8,19 +8,21 @@ Este repositório contém o código-fonte do site institucional da **Projetos Co
 
 ```bash
 .
-├── inicio.html           # Página inicial (Home)
-├── sobre.html            # Página "Quem somos"
-├── servicos.html         # Página de Serviços
-├── cases.html            # Página de Cases
-├── contato.html          # Página de Contato
+PCI-SITE/
+├── assets/ # Imagens, ícones e logos
+│ ├── icons/
+│ ├── img/
+│ └── logo/
 ├── css/
-│   └── style.css         # Estilos do site
+│ └── style.css # Estilos do site
 ├── js/
-│   └── script.js         # Scripts do site
-├── assets/
-│   ├── img/              # Imagens utilizadas
-│   ├── icons/            # Ícones e vetores
-│   └── logo/             # Logotipos
+│ └── script.js # Scripts JS do site
+├── pages/ # Páginas internas do site
+│ ├── sobre.html
+│ ├── servicos.html
+│ ├── cases.html
+│ └── contato.html
+├── index.html # Página inicial (Home)
 └── README.md
 ```
 
