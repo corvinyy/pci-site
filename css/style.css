@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --background-color: #181818;
+    --background-color-2: #1e1e1e;
+    --borders-color: #313131;
+    --primary-color: #c40001;
+    --secondary-color: #c20001;
+    --terciary-color: white;
+}
+
+/*
+
+-> POSICIONAMENTO
+-> TAMANHO
+-> ESPAÇAMENTO
+-> CORES
+-> FONTES/TEXTO
+-> VISIBILIDADE
+-> ANIMAÇÕES/TRANSIÇÕES
+
+*/
+
+/* GERAL */
+* {
+    padding: 0;
+    margin: 0;
+    
+    box-sizing: border-box;
+
+    color: var(--terciary-color);
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* BODY E BACKGROUND */
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    background-color: var(--background-color);
+    background-image: linear-gradient(120deg, var(--background-color-2) 25%, var(--background-color) 25%);
+}
+
+/* 
+-------------------------------------------------------- 
+*/
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90%;
+
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 12px 80px;
+    
+    border: 5px solid var(--borders-color);
+    border-radius: 15px;
+    background-color: none;
+}
+
+/* Navegação do header */
+
+header nav ul{
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+}
+
+header nav a {
+    position: relative;
+
+    padding-bottom: 2px;
+
+    border-bottom: 3px solid transparent;
+    color: var(--terciary-color);
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+header nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    height: 3px;
+    width: 0;
+
+    background-color: var(--primary-color);
+
+    transform: translateX(-50%);
+    transition: 0.65s ease;
+}
+
+/* Animação da navegação */
+header nav a:hover::after,
+header nav a.active::after {
+    width: 100%;
+}
+
+header nav a.active {
+    color: var(--primary-color);
+}
+
+/* Animação do icon de telefone do header */
+
+header .icon-telefone {
+    padding: 5px 8px;
+
+    border-radius: 10px;
+
+    transform: scale(1);
+    transition: transform 0.8s ease, background-color 0.8s ease; 
+}
+
+header .icon-telefone:hover {
+    background-color: var(--borders-color);
+
+    transform: scale(1.2);
+
+    cursor: pointer;
+}
+
+/* 
+-------------------------------------------------------- 
+*/
+
+
+
+
+
+
