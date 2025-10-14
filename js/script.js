@@ -16,3 +16,14 @@ function menuLateral() {
         const nav = document.querySelector('.header-nav');
         nav.classList.toggle('open');
 }
+
+/* (INÍCIO) - Animação do sub texto de mercados */
+document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll(".apt-sub-lista", ".apt-botao");
+    
+    items.forEach((item, index) => {
+        setTimeout(() => {
+            item.classList.add("animate");
+        }, index * 1000); 
+    });
+});

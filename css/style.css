@@ -252,6 +252,10 @@ section {
     font-size: 22px;
 }
 
+.apt-infos {
+    max-width: 420px;
+}
+
 .apt-sub-texto {
     display: flex;
     flex-direction: column;
@@ -259,7 +263,7 @@ section {
     max-width: 510px;
 
     margin-top: 20px;
-    gap:6px;
+    gap: 6px;
 }
 
 .apt-sub-lista {
@@ -267,6 +271,27 @@ section {
     align-items: center;
     
     width: 510px;
+
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* Animação slide In */
+.apt-sub-lista.animate {
+    animation: slideIn 0.6s ease forwards;
 }
 
 .apt-sub-texto img{
@@ -284,25 +309,25 @@ section {
 .apt-botao {
     display: flex;
 
-    width: 510px;
+    width: 400px;
 
-    padding: 12px;
     gap: 19px;
 
     border-radius: 10px;
 
     font-weight: bold;
-    font-size: 13px;
+    font-size: 15px;
 }
+
 
 .apt-botao a {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width:180px;
+    width:195px;
 
-    padding: 10px;
+    padding: 15px;
     gap: 10px;
     margin-top: 20px;
 
@@ -310,11 +335,20 @@ section {
     border-radius: 10px;
     
     text-decoration: none;
+
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 1s ease, background-color 1s ease;
 }
 
 .apt-botao img {
     width: 20px;
     height: 20px;
+}
+
+.apt-botao a:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
 }
 
 
