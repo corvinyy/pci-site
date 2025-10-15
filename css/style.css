@@ -140,7 +140,7 @@ header .icon-telefone:hover {
     cursor: pointer;
 }
 
-/* Responsividade para o celular */
+/* (HEADER) Responsividade para mobile */
 
 .logo-PCI {
     display: none
@@ -351,6 +351,133 @@ section {
     transform: scale(1.1);
 }
 
+/* 
+(Páginas) Responsividade para o celular 
+*/
 
+/* INÍCIO */
 
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        padding: 60px 20px;
+    }
 
+    #apresentacao {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 60px 20px;
+    }
+
+    .apt-foto {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .apt-infos {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .apt-texto {
+        max-width: 100%;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .apt-sub-texto {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .apt-sub-lista {
+        width: 100%;
+    }
+
+    .apt-sub-texto p {
+        font-size: 14px;
+    }
+
+    .apt-botao {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .apt-botao a {
+        width: 80%;
+        max-width: 300px;
+    }
+
+}
+
+/* 
+-------------------------------------------------------- 
+*/
+
+/* 
+(Páginas) Responsividade para iPad/Tablets 
+*/
+
+/* INÍCIO */
+@media (min-width: 769px) and (max-width: 1024px) {
+    section {
+        flex-direction: column;
+        padding: 80px 40px;
+    }
+
+    #apresentacao {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding: 80px 40px;
+    }
+
+    .apt-foto {
+        width: 100%;
+        max-width: 500px;
+       
+    }
+
+    .apt-infos {
+        max-width: 90%;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .apt-texto {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .apt-sub-texto {
+        align-items: center;
+    }
+
+    .apt-sub-lista {
+        width: 100%;
+    }
+
+    .apt-sub-texto p {
+        font-size: 18px;
+    }
+
+    .apt-botao {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .apt-botao a {
+        width: 60%;
+        max-width: 220px;
+        padding: 15px;
+        font-size: 16px;
+    }
+}
