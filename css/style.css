@@ -449,6 +449,68 @@ section {
     margin: 5px
 }
 
+
+/* PARCEIROS */
+#parceria {
+    flex-direction: column;
+    padding: 40px 0;
+    text-align: center;
+    gap: 40px;
+}
+
+.parceria-titulo h2{
+    border-bottom: 3px solid var(--terciary-color);
+}
+
+.carrossel {
+    padding: 10px 0px;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 6px solid var(--borders-color);
+    border-radius: 10px;
+}
+
+.carrossel ul {
+    display: flex;
+    
+    align-items: center;
+    
+    padding: 20px;
+    margin: 0;
+    gap: 55px;
+    list-style: none;
+    
+    animation: carrossel 30s linear infinite;
+}
+
+.carrossel li {
+    flex-shrink: 0; /* nao encolher imagens */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.carrossel li:hover {
+    transform: scale(1.1);
+    background-color: var(--primary-color); 
+    cursor: pointer;
+}
+
+.carrossel img {
+    width: 90px;
+    height: 90px;
+}
+
+/* Animação do carrossel  - looping pro lado */
+@keyframes carrossel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
 /* 
 -------------------------------------------------------- 
 */
@@ -541,6 +603,20 @@ section {
         width: 30%;
         text-align: center;
     }
+
+    .carrossel {
+        max-width: 90%;
+    }
+
+    .carrossel ul {
+        gap: 30px;
+        animation: carrossel 10s linear infinite;
+    }
+
+    .carrossel img {
+        width: 70px;
+        height: 70px;
+    }
 }
 
 /* 
@@ -552,7 +628,7 @@ section {
 */
 
 /* INÍCIO */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     section {
         flex-direction: column;
         padding: 80px 40px;
@@ -610,5 +686,19 @@ section {
 
     .dados-container ul {
         padding: 20px;
+    }
+
+    .carrossel {
+        max-width: 85%;
+    }
+
+    .carrossel ul {
+        gap: 40px;
+        animation: carrossel 30s linear infinite;
+    }
+
+    .carrossel img {
+        width: 80px;
+        height: 80px;
     }
 }
