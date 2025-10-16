@@ -5,7 +5,7 @@
     --background-color-2: #1e1e1e;
     --borders-color: #313131;
     --primary-color: #c40001;
-    --secondary-color: #c20001;
+    --secondary-color: #6d0000;
     --terciary-color: white;
 }
 
@@ -278,7 +278,7 @@ section {
 
 /* Animação slide In */
 
-@keyframes slideIn {
+@keyframes slideInSub {
     0% {
         transform: translateX(-50px);
         opacity: 0;
@@ -292,7 +292,7 @@ section {
 
 /* Ativação da animação slide In */
 .apt-sub-lista.animate {
-    animation: slideIn 0.6s ease forwards;
+    animation: slideInSub 0.6s ease forwards;
 }
 
 .apt-sub-texto img{
@@ -358,7 +358,7 @@ section {
     }
 }
 
-/* Ativação da Animação  */
+/* Ativação da Animação SlideUp*/
 
 .apt-botao a.animate {
     animation: slideUp 0.6s ease forwards;
@@ -374,13 +374,92 @@ section {
     transform: translateY(0) scale(1.1); 
 }
 
+
+/* Dados PCI */
+#dados {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.dados-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dados-container ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+    list-style: none;
+}
+
+.dados-lista {
+    flex: 1;
+    min-width: 115px;
+}
+
+.dados-lista h3 {
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* "Maior EJ integrada do Centro-Oeste" */
+.dados-lista:first-child {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px 15px;
+
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 0.6s ease forwards;
+}
+
+/* Animação para o lado */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Ativar animação SlideIn*/
+.dados-lista:first-child.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Números */
+.dados-lista p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Dados*/
+.dados-lista p:last-child {
+    font-size: 14px;
+    margin: 5px
+}
+
+/* 
+-------------------------------------------------------- 
+*/
+
 /* 
 (Páginas) Responsividade para o celular 
 */
 
-/* INÍCIO */
-
 @media (max-width: 768px) {
+    
+    /* INÍCIO */
     section {
         flex-direction: column;
         padding: 60px 20px;
@@ -423,7 +502,8 @@ section {
     .apt-sub-texto p {
         font-size: 14px;
     }
-
+    
+    /* Botões principais */
     .apt-botao {
         flex-direction: column;
         align-items: center;
@@ -437,6 +517,30 @@ section {
         max-width: 300px;
     }
 
+    /* Dados */
+    .dados-container ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dados-lista:first-child {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+        border: none;
+        background: none;
+    }
+
+    .dados-lista:first-child h3 {
+        background-color: var(--secondary-color);
+        border-radius: 10px;
+        padding: 20px 15px;
+        display: inline-block; 
+    }
+
+    .dados-lista:not(:first-child) {
+        width: 30%;
+        text-align: center;
+    }
 }
 
 /* 
@@ -502,5 +606,9 @@ section {
         max-width: 220px;
         padding: 15px;
         font-size: 16px;
+    }
+
+    .dados-container ul {
+        padding: 20px;
     }
 }
