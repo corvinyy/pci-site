@@ -5,43 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre nós - Projetos Consultoria Integrada</title>
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Style para o header específico -->
+    <style>
+        header {
+            border: 5px solid white;
+            border-radius: 15px;
+        }
+
+        #back-header {
+            display: flex;
+            margin: 0 auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("/assets/imgs/banner-sobre1.jpg");
+            padding-bottom: 130px;
+            gap: 90px;
+            flex-direction: column;
+        }
+
+        #prazer-pci {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        @media (max-width: 1025px) {
+            header {
+                border: none;
+                border-bottom: 3px solid white;
+                border-radius: 0;
+            }
+
+            #back-header {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url("/assets/imgs/banner-sobre1.jpg")
+            }
+            
+            #prazer-pci {
+            text-align: center;
+            font-size: 28px;
+            }
+        }
+    </style>
 </head>
 
-<body>  
-    <header>
-        <div class="menu-lateral">
-            <img src="../assets/icons/menu-icon.png" alt="Menu Icon" width="35px" height="35px" onclick="menuLateral()">
-        </div>
+<body class="sobrenos">  
+    <div id="back-header">
+        <header>
+            <div class="menu-lateral">
+                <img src="../assets/icons/menu-icon.png" alt="Menu Icon" width="35px" height="35px" onclick="menuLateral()">
+            </div>
 
-        <div class="logo-PCI">
-            <img src="../assets/logos/PCI-logo-branca.png" alt="Logo PCI" height="80px">
-        </div>
+            <div class="logo-PCI">
+                <img src="../assets/logos/PCI-logo-branca.png" alt="Logo PCI" height="80px">
+            </div>
 
-        <div class="logo-PCI-escrita">
-            <img src="../assets/logos/PCI-logo-escrita-branca.png" alt="Logo PCI" height="80px">
-        </div>
+            <div class="logo-PCI-escrita">
+                <img src="../assets/logos/PCI-logo-escrita-branca.png" alt="Logo PCI" height="80px">
+            </div>
 
-        <div class="header-nav">
-            <nav>
-                <ul>
-                    <a href="/index.html" id="nav-home" >Início</a>
-                    <a href="/pages/sobre.html" id=nav-sobre class="active">Sobre Nós</a>
-                    <a href="">Serviços</a></li>
-                    <a href="/pages/portifolio.html" id="nav-portifolio">Portifólio</a>
-                    <a href="/pages/contato.html" id="nav-contato">Contato</a>
-                </ul>
-            </nav>
-        </div>
+            <div class="header-nav">
+                <nav>
+                    <ul>
+                        <a href="/index.html" id="nav-home" >Início</a>
+                        <a href="/pages/sobre.html" id=nav-sobre class="active">Sobre Nós</a>
+                        <a href="">Serviços</a></li>
+                        <a href="/pages/portifolio.html" id="nav-portifolio">Portifólio</a>
+                        <a href="/pages/contato.html" id="nav-contato">Contato</a>
+                    </ul>
+                </nav>
+            </div>
 
-        <div class="icon-telefone">
-            <a href="/pages/contato.html">
-                <img src="../assets/icons/telefone-icon.png" alt="Telefone Icon" width="35px" height="35px">
-            </a>    
+            <div class="icon-telefone">
+                <a href="/pages/contato.html">
+                    <img src="../assets/icons/telefone-icon.png" alt="Telefone Icon" width="35px" height="35px">
+                </a>    
+            </div>
+        </header>
+
+        <div id="prazer-pci">
+            <h1> Prazer, PCI</h1>
         </div>
-    </header>
+    </div>    
 
     <main>
-        
+        <section id=apresentacao>
+            <div class="apt-infos">
+                <div class="apt-titulo">
+                    <h1>Quem somos</h1>
+                </div>
+
+                <div class="apt-texto">
+                    <p>
+                        Há 25 anos no mercado, a Projetos Consultoria Integrada é a empresa júnior 
+                        do CEUB, oferecendo soluções em Consultoria Empresarial, Marketing e TI, 
+                        Engenharia e Arquitetura. Formada por estudantes universitários 
+                        comprometidos com a excelência, unimos conhecimento acadêmico atualizado à 
+                        prática profissional, promovendo resultados reais para nossos clientes e impacto 
+                        spositivo para a comunidade acadêmica.
+                    </p>
+                </div>
+            </div>
+
+            <div class="apt-foto">
+                <img src="assets/imgs/exemplo.png" alt="foto da PCI">
+            </div>
+        </section>
     </main>
 
     <script src="../js/script.js"></script>
