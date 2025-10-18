@@ -29,20 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }, index * 1000); 
     });
 
-    /* (INÍCIO) Animação do dado para o lado (aparecer ao scroll) */
-    const firstItem = document.querySelector(".dados-lista:first-child");
-    if (firstItem) {
-        const dadosObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    firstItem.classList.add("animate");
-                    observer.unobserve(entry.target); // não repetir 
-                }
-            });
-        }, { threshold: 0.3 });
-        dadosObserver.observe(firstItem);
-    }
-
     /* Animação dos botões de Fale Conosco e Serviços (aparecer ao scroll, com delay) */
     const buttons = document.querySelectorAll(".apt-botao a");
     if (buttons.length > 0 && buttons[0].parentElement) {
@@ -61,4 +47,46 @@ document.addEventListener("DOMContentLoaded", function() {
         buttonsObserver.observe(buttons[0].parentElement);
     }
 
+    /* (SOBRE NÓS) titulo + texto + foto */
+    const target = document.querySelector('#apresentacao');
+
+        const sobreNosObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    document.querySelector('.apt-infos').classList.add('animate-titulo');
+                    document.querySelector('.apt-foto').classList.add('animate-foto');
+                    observer.disconnect(); 
+                }
+            });
+        }, { threshold: 0.5 }); 
+
+        sobreNosObserver.observe(target);
+
 });
+
+/* Carrossel do MVD */
+let currentSlide = 0;
+const slides = document.querySelectorAll('.mvd-slide');
+const dots = document.querySelectorAll('.dot');
+
+function mostrarSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+    currentSlide = index;
+}
+
+function proximoSlide() {
+    const next = (currentSlide + 1) % slides.length;
+    mostrarSlide(next);
+}
+
+function irParaSlide(index) {
+    mostrarSlide(index);
+}
+
+mostrarSlide(0);
+
+setInterval(proximoSlide, 4000);
