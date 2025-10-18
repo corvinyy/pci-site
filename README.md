@@ -2,6 +2,7 @@
 
 Este repositório contém o código-fonte do site institucional da **Projetos Consultoria Integrada (PCI)**, uma empresa júnior comprometida com a excelência em consultoria e soluções integradas para empresas e organizações.
 
+![Preview of the current progress](./assets/imgs/previews/pv1.png)
 ---
 
 ## 📁 Estrutura do Projeto
@@ -52,13 +53,21 @@ PCI-SITE/
     style="padding-right: 10px;" 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" 
 />
+<img 
+    align="left" 
+    alt="JavaScript" 
+    title="JavaScript"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" 
+/>
 
 <br></br>
 ---
 ## 🧩 Páginas
 
 - Home: Apresentação da empresa e navegação principal
-- Sobre: Informações sobre a história e missão da PCI
+- Sobre: Informações sobre a história e MVV da PCI
 - Serviços: Lista de serviços oferecidos
 - Cases: Projetos e cases de sucesso
 - Contato: Formulário de contato e informações de comunicação
