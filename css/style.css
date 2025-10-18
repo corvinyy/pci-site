@@ -279,7 +279,7 @@ section {
 
 /* Animação slide In */
 
-@keyframes slideInSub {
+@keyframes slideInSubLista {
     0% {
         transform: translateX(-50px);
         opacity: 0;
@@ -291,9 +291,9 @@ section {
 }
 
 
-/* Ativação da animação slide In */
+/* Ativação da animação slide In Sub*/
 .apt-sub-lista.animate {
-    animation: slideInSub 0.6s ease forwards;
+    animation: slideInSubLista 0.6s ease forwards;
 }
 
 .apt-sub-texto img{
@@ -348,7 +348,7 @@ section {
 }
 
 /* Animação slide pra cima */
-@keyframes slideUp {
+@keyframes slideUpBotao {
     0% {
         opacity: 0;
         transform: translateY(50px);
@@ -362,7 +362,7 @@ section {
 /* Ativação da Animação SlideUp*/
 
 .apt-botao a.animate {
-    animation: slideUp 0.6s ease forwards;
+    animation: slideUpBotao 0.6s ease forwards;
 }
 
 .apt-botao img {
@@ -416,11 +416,11 @@ section {
 
     opacity: 0;
     transform: translateX(-50px);
-    animation: slideIn 0.6s ease forwards;
+    animation: slideInMaiorEJ 0.6s ease forwards;
 }
 
-/* Animação para o lado */
-@keyframes slideIn {
+/* Animação para o lado*/
+@keyframes slideInMaiorEJ {
     0% {
         transform: translateX(-80px);
         opacity: 0;
@@ -431,7 +431,7 @@ section {
     }
 }
 
-/* Ativar animação SlideIn*/
+/* Ativar animação SlideInMaiorEJ */
 .dados-lista:first-child.animate {
     opacity: 1;
     transform: translateX(0);
@@ -562,6 +562,10 @@ body.sobrenos #apresentacao {
 
 body.sobrenos .apt-infos {
     max-width: 720px;
+
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s, transform 0.8s;
 }
 
 body.sobrenos .apt-texto {
@@ -569,6 +573,128 @@ body.sobrenos .apt-texto {
     text-align: justify;
     max-width: 610px;
     font-size: 22px;
+}
+
+body.sobrenos .apt-foto {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s, transform 0.8s;
+}
+
+/* Animação para ativar o título */
+body.sobrenos .animate-titulo {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Animação para ativar o texto */
+body.sobrenos .animate-texto {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Animação para ativar a imagem */
+body.sobrenos .animate-foto {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* MISSÃO, VISÃO, DIVERSIDADE */
+.mvd-infos {
+    position: relative;
+    background-color: var(--secondary-color);
+    color: var(--terciary-color);
+    padding: 40px;
+    width: 1200px;
+    max-width: 1500px;
+    margin: auto;
+    border-radius: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.mvd-slide {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    height: 140px;
+}
+
+.mvd-slide.active {
+    display: block;
+    animation: slideInBounce 0.6s ease;
+}
+
+@keyframes slideInBounce {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(-10px);
+    }
+    80% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.mvd-icon-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+.mvd-icon-titulo img {
+    width: 54px;
+    height: 54px;
+}
+
+.mvd-infos p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mvd-seta {
+    position: absolute;
+    top: 40%;
+    right: 30px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    user-select: none;
+    rotate: 90deg;
+}
+
+.mvd-seta img{
+    width: 100px;
+    height: 70px;
+}
+
+.mvd-dots {
+    margin-top: 20px;
+}
+
+.mvd-dots .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: rgb(53, 2, 2);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mvd-dots .dot.active {
+    background-color: var(--terciary-color);
 }
 
 /* 
@@ -720,6 +846,12 @@ body.sobrenos .apt-texto {
     body.sobrenos .apt-foto {
         margin-top: 20px;
     }
+
+    
+
+
+
+    
 }
 
 /* 
