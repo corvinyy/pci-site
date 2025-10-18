@@ -238,11 +238,11 @@ section {
     gap: 150px;
 }
 
-.apt-foto {
-    width: 400px;
-    height: 300px;
-
-    background-color: none;
+.apt-foto img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    
     border: 5px solid var(--borders-color);
     border-radius: 10px;
 }
@@ -250,6 +250,7 @@ section {
 .apt-texto {
     max-width: 410px;
     font-size: 22px;
+    text-align: justify;
 }
 
 .apt-infos {
@@ -516,7 +517,59 @@ section {
 */
 
 /* SOBRE NÓS */
-    
+
+body.sobrenos header {
+    border: 5px solid white;
+    border-radius: 15px;
+}
+body.sobrenos #back-header {
+    display: flex;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-image: url("/assets/imgs/banner-enej.png");
+    padding-bottom: 400px;
+    gap: 100px;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+body.sobrenos #back-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: -1;
+}
+
+body.sobrenos #prazer-pci {
+    text-align: center;
+    font-size: 30px;        
+}
+
+body.sobrenos #apresentacao {
+    display: flex;
+
+    padding: 150px 20px;
+    gap: 110px;
+}
+
+body.sobrenos .apt-infos {
+    max-width: 720px;
+}
+
+body.sobrenos .apt-texto {
+    margin-top: 50px;
+    text-align: justify;
+    max-width: 610px;
+    font-size: 22px;
+}
 
 /* 
 -------------------------------------------------------- 
@@ -541,9 +594,9 @@ section {
         padding: 60px 20px;
     }
 
-    .apt-foto {
-        width: 90%;
-        max-width: 350px;
+    .apt-foto img{
+        max-width: 100%;
+        height: auto;
     }
 
     .apt-infos {
@@ -556,7 +609,7 @@ section {
     .apt-texto {
         max-width: 100%;
         font-size: 18px;
-        text-align: center;
+        text-align: justify;
     }
 
     .apt-sub-texto {
@@ -624,6 +677,49 @@ section {
         width: 70px;
         height: 70px;
     }
+
+    /* ------------------------------------- */
+
+    /* SOBRE NÓS */
+    body.sobrenos header {
+        border: none;
+        border-bottom: 3px solid white;
+        border-radius: 0;
+    }
+
+    body.sobrenos #back-header {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("/assets/imgs/banner-enej.png");
+        background-size: cover; 
+        background-attachment: scroll; 
+    }
+
+    body.sobrenos #prazer-pci {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    body.sobrenos #apresentacao {
+        display: block;
+        padding: 90px 10px;
+    }
+
+    body.sobrenos .apt-infos {
+        max-width: 100%;
+        gap: 70px;
+    }
+
+    body.sobrenos .apt-texto {
+        margin-top: 20px;
+        text-align: left;
+        max-width: 100%;
+        font-size: 18px;
+    }
+
+    body.sobrenos .apt-foto {
+        margin-top: 20px;
+    }
 }
 
 /* 
@@ -648,10 +744,9 @@ section {
         padding: 80px 40px;
     }
 
-    .apt-foto {
-        width: 100%;
-        max-width: 500px;
-       
+    .apt-foto img{
+        max-width: 100%;
+        height: auto;
     }
 
     .apt-infos {
@@ -662,7 +757,7 @@ section {
 
     .apt-texto {
         font-size: 22px;
-        text-align: center;
+        text-align: justify
     }
 
     .apt-sub-texto {
@@ -707,5 +802,51 @@ section {
     .carrossel img {
         width: 80px;
         height: 80px;
+    }
+
+    /* ------------------------------------- */
+
+    /* SOBRE NÓS */
+    body.sobrenos header {
+        border: none;
+        border-bottom: 3px solid white;
+        border-radius: 0;
+    }
+
+    body.sobrenos #back-header {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("/assets/imgs/banner-enej.png");
+        background-size: cover; 
+        background-attachment: scroll; 
+    }
+
+    body.sobrenos #prazer-pci {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    body.sobrenos #apresentacao {
+        display: flex;
+        flex-direction: column;
+        padding: 100px 20px;
+        gap: 50px;
+    }
+
+    body.sobrenos .apt-infos {
+        max-width: 90%;
+    }
+
+    body.sobrenos .apt-texto {
+        margin-top: 30px;
+        text-align: justify;
+        max-width: 100%;
+        font-size: 20px;
+    }
+
+    body.sobrenos .apt-foto {
+        width: 100%;
+        height: auto;
+        max-width: 570px;
     }
 }
