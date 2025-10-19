@@ -847,10 +847,51 @@ body.sobrenos .animate-foto {
         margin-top: 20px;
     }
 
-    
 
+    .mvd-infos {
+        width: 90%;
+        padding: 30px;
+        border-radius: 25px;
+    }
 
+    .mvd-slide {
+        height: 220px;
+    }
 
+    .mvd-icon-titulo {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .mvd-icon-titulo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mvd-infos p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .mvd-seta {
+        top: 45%;
+        right: 30px;
+    }
+
+    .mvd-seta img {
+        width: 40px;
+        height: 40px;
+        rotate:(90deg);
+    }
+
+    .mvd-dots {
+        margin-top: 20px;
+    }
+
+    .mvd-dots .dot {
+        height: 10px;
+        width: 10px;
+    }
     
 }
 
@@ -980,5 +1021,50 @@ body.sobrenos .animate-foto {
         width: 100%;
         height: auto;
         max-width: 570px;
+    }
+
+    .mvd-infos {
+        width: 90%;
+        padding: 30px;
+        border-radius: 25px;
+    }
+
+    .mvd-slide {
+        height: 160px;
+    }
+
+    .mvd-icon-titulo {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .mvd-icon-titulo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mvd-infos p {
+        font-size: 17px;
+        padding: 0 20px;
+    }
+
+    .mvd-seta {
+        top: 45%;
+        right: 30px;
+        rotate: (90deg);
+    }
+
+    .mvd-seta img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mvd-dots {
+        margin-top: 20px;
+    }
+
+    .mvd-dots .dot {
+        height: 10px;
+        width: 10px;
     }
 }
