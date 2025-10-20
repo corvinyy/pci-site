@@ -89,4 +89,4 @@ function irParaSlide(index) {
 
 mostrarSlide(0);
 
-setInterval(proximoSlide, 4000);
+setInterval(proximoSlide, 6000);
