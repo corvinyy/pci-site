@@ -951,7 +951,95 @@ body.sobrenos .animate-foto {
     text-align: left;
 }
 
+/* ------------------------------------- */
 
+/* CONTATO */
+
+#contato {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 100px;
+    padding: 60px 100px;
+}
+
+.onde-estamos {
+    flex: 1;
+    min-width: 320px;
+    max-width: 500px;
+}
+
+.local-titulo h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+
+.oe-lista ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.oe-lista li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+    gap: 10px;
+}
+.oe-infos {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.oe-infos img {
+    width: 30px;
+    height: 30px;
+}
+
+#mapa {
+    flex: 1;
+    min-width: 400px;
+    max-width: 600px;
+}
+
+#mapa iframe {
+    width: 100%;
+    height: 410px;
+    border-radius: 10px;
+}
+
+
+/* Formulário de contato */
+
+#formulario {
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.forms-titulo {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 4px solid var(--terciary-color);
+}
+
+.forms iframe {
+    width: 800px;
+    height: 900px;
+    border: 5px solid var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px black;
+}
 
 /* 
 -------------------------------------------------------- 
@@ -1289,6 +1377,54 @@ body.sobrenos .animate-foto {
         padding: 10px 20px;
     }
 
+
+    /* CONTATO */
+    #contato {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        gap: 50px;
+    }
+
+    .onde-estamos {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .local-titulo h1 {
+        font-size: 36px;
+    }
+
+    .oe-lista li {
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    #mapa {
+        max-width: 100%;
+        min-width: unset;
+    }
+
+    #mapa iframe {
+        height: 300px;
+    }
+
+    #formulario {
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .forms-titulo {
+        font-size: 16px;
+        border-bottom: 3px solid var(--terciary-color);
+    }
+
+    .forms iframe {
+        width: 100%;
+        height: 700px; /* reduz altura para caber melhor em telas pequenas */
+        border-width: 3px;
+        box-shadow: 0 0 6px 1px rgba(0,0,0,0.5);
+    }
 }
 
 /* 
@@ -1572,4 +1708,49 @@ body.sobrenos .animate-foto {
         font-size: 16px;
     }
     
+
+    /* CONTATO */
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 60px;
+        padding: 50px 60px;
+    }
+
+    .onde-estamos {
+        flex: 1 1 45%;
+        max-width: 450px;
+    }
+
+    .local-titulo h1 {
+        font-size: 42px;
+    }
+
+    .oe-lista li {
+        font-size: 17px;
+    }
+
+    #mapa {
+        flex: 1 1 45%;
+        max-width: 500px;
+    }
+
+    #mapa iframe {
+        height: 360px;
+    }
+
+    #formulario {
+        padding: 30px 10px;
+    }
+
+    .forms-titulo {
+        font-size: 18px;
+        
+    }
+
+    .forms iframe {
+        width: 500px;
+        height: 800px;
+        border-width: 4px;
+    }
 }
