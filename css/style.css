@@ -743,6 +743,220 @@ body.sobrenos .animate-foto {
 -------------------------------------------------------- 
 */
 
+/* PORTIFÓLIO */
+
+#port-titulo {
+    flex-direction: column;
+    padding: 100px 0;
+    text-align: center;
+    gap: 50px;
+}
+
+#port-titulo h1 {
+    font-size: 40px;
+    border-bottom: 3px solid var(--terciary-color);
+}
+
+#port-titulo p {
+    width: 640px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.botao-contato a {
+    justify-content: center;
+
+    width:195px;
+
+    padding: 20px;
+
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    
+    text-decoration: none;
+
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+.botao-contato a:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(0) scale(1.1); 
+}
+#projetos {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proj-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.proj-card {
+    background-color: var(--background-color-2);
+    border: 6px solid var(--borders-color);
+    border-radius: 20px;
+    width: 440px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+    height: 700px; 
+}
+
+.proj-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px 10px black;
+    border: 6px solid var(--primary-color);
+
+}
+
+.card-foto {
+    background-color: white;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.card-foto img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border: white 3px solid;
+    box-shadow: 0 0 5px 1px white;
+}
+
+.proj-card h3 {
+    text-align: center;
+    color: var(--terciary-color);
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.proj-card p {
+    color: white;
+    padding: 15px 10px;
+    margin-bottom: 30px;
+    text-align: justify;
+    flex-grow: 1; 
+    min-height: 180px; 
+}
+
+.proj-botoes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.proj-botoes a {
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    display: inline-flex;
+    gap: 8px;
+    text-decoration: none;
+    background: white;
+    color: var(--secondary-color);
+    border: 4px solid var(--secondary-color);
+    border-radius: 7px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.proj-botoes a:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: scale(1.05);
+}
+
+/*depoimentos*/
+
+#depoimentos {
+    text-align: center;
+    padding: 100px 0;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#depoimentos h1 {
+    font-size: 40px;
+    border-bottom: 3px solid var(--terciary-color);
+}
+
+.depo-lista {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.depo-lista ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    gap: 100px;
+   
+}
+
+.depo-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 550px;
+    padding: 40px 35px;
+    border: 4px solid var(--borders-color);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 1px black;
+
+    background-color: var(--terciary-color);
+    gap: 20px;
+
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.depo-item:hover {
+    transform: scale(1.02);
+    border: 4px solid var(--primary-color);
+}
+
+.depo-item img {
+    margin-bottom: 15px; 
+    box-shadow: 0 0 4px 6px black
+
+}
+
+.depo-texto p {
+    margin-bottom: 10px; 
+    font-size: 20px;
+    text-align: justify;
+    color: var(--borders-color);
+    font-weight: bold;   
+}
+
+.depo-texto span {
+    font-size: 18px;
+    color: rgb(87, 87, 87);
+    text-align: left;
+}
+
+
+
+/* 
+-------------------------------------------------------- 
+*/
+
 /* 
 (Páginas) Responsividade para o celular 
 */
@@ -968,6 +1182,113 @@ body.sobrenos .animate-foto {
         font-size: 20px;
     }
 
+    /* ------------------------------------- */
+
+    /* PORTIFÓLIO */
+    #port-titulo {
+        padding: 60px 20px;
+        gap: 30px;
+    }
+
+    #port-titulo h1 {
+        font-size: 28px;
+    }
+
+    #port-titulo p {
+        width: 100%;
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    #port-titulo a {
+        width: 100%;
+        max-width: 250px;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .proj-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proj-card {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .card-foto {
+        height: 200px;
+    }
+
+    .card-foto img {
+        height: 200px;
+    }
+
+    .proj-card h3 {
+        font-size: 22px;
+    }
+
+    .proj-card p {
+        font-size: 16px;
+        padding: 10px;
+        text-align: left;
+
+    }
+
+    .proj-botoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .proj-botoes a {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #depoimentos {
+        padding: 60px 20px;
+        gap: 50px;
+    }
+
+    #depoimentos h1 {
+        font-size: 28px;
+    }
+
+    .depo-lista ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .depo-item {
+        flex-direction: column;
+        width: 100%;
+        max-width: 350px;
+        padding: 25px 20px;
+    }
+
+    .depo-item img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .depo-texto p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .depo-texto span {
+        font-size: 14px;
+    }
+
+    .botao-contato a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
 }
 
 /* 
@@ -1167,5 +1488,88 @@ body.sobrenos .animate-foto {
         font-size: 20px; 
     }
 
+    /* ------------------------------------- */
+
+    /* PORTIFÓLIO */
+    #port-titulo {
+        padding: 80px 40px;
+        gap: 40px;
+    }
+
+    #port-titulo h1 {
+        font-size: 34px;
+    }
+
+    #port-titulo p {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    #port-titulo a {
+        font-size: 22px;
+        padding: 18px;
+    }
+
+    .proj-container {
+        gap: 25px;
+    }
+
+    .proj-card {
+        width: 45%;
+        height: auto;
+        padding: 18px;
+    }
+
+    .card-foto {
+        height: 220px;
+    }
+
+    .card-foto img {
+        height: 220px;
+    }
+
+    .proj-card h3 {
+        font-size: 24px;
+    }
+
+    .proj-card p {
+        font-size: 17px;
+        text-align: left;
+    }
+
+    .proj-botoes a {
+        font-size: 15px;
+        padding: 10px 14px;
+    }
+
+
+    #depoimentos {
+        padding: 80px 40px;
+        gap: 70px;
+    }
+
+    #depoimentos h1 {
+        font-size: 32px;
+    }
+
+    .depo-lista ul {
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .depo-item {
+        width: 400px;
+        padding: 30px 25px;
+    }
+
+    .depo-texto p {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .depo-texto span {
+        font-size: 16px;
+    }
     
 }
