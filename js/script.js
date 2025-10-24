@@ -62,6 +62,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
         sobreNosObserver.observe(target);
 
+
+    /* (SOBRE NÓS) Animação dos valores (slide sequencial) */
+    const container = document.querySelector(".valores-infos");
+    const valores = container.querySelectorAll(".valores-lista");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                valores.forEach((item, index) => {
+                    setTimeout(() => {
+                        item.classList.add("animate");
+                    }, index * 900);
+                });
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    observer.observe(container);
 });
 
 /* Carrossel do MVD */
