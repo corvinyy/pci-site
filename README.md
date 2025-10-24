@@ -66,11 +66,11 @@ PCI-SITE/
 ---
 ## 🧩 Páginas
 
-- Home: Apresentação da empresa e navegação principal
-- Sobre: Informações sobre a história e MVV da PCI
+- Home: Apresentação da empresa, parceiros e navegação principal
+- Sobre: Informações sobre a história, MVV da PCI, e movimento MEJ
 - Serviços: Lista de serviços oferecidos
-- Cases: Projetos e cases de sucesso
-- Contato: Formulário de contato e informações de comunicação
+- Portifólio: Projetos, cases de sucesso e depoimentos
+- Contato: Formulário de contato e informações de comunicação e localização
 
 ---
 
