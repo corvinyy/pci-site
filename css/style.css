@@ -760,6 +760,103 @@ body.sobrenos .animate-foto {
 -------------------------------------------------------- 
 */
 
+/* SERVIÇOS */
+
+#serv-titulo {
+    flex-direction: column;
+    padding: 100px 0;
+    text-align: center;
+    gap: 50px;
+}
+
+#serv-titulo h1 {
+    font-size: 40px;
+    border-bottom: 3px solid var(--terciary-color);
+}
+
+.serv-titulo-frase p {
+    width: 640px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.serv-frases ul {
+    display: flex;
+    list-style: none;
+    gap: 60px
+}
+
+.serv-frases li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    appearance: none;
+    width: 250px;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.serv-frases li p{
+    border-left: 2px solid rgb(243, 60, 60);
+    color: rgb(243, 60, 60);
+}
+
+#servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 80px 10%;
+    background-color: var(--terciary-color);
+}
+
+.servico {
+    background-color: rgb(95, 44, 59); 
+    color: white;
+    border-radius: 15px;
+    padding: 50px;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 260px;
+}
+
+.servico h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.servico p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.4;
+    color: var(--terciary-color);
+}
+
+.servico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    background-color: var(--background-color-2);
+    border: 4px solid black;
+    font-weight: bold;
+}
+
+.servico {
+  position: relative;
+  overflow: hidden;
+}
+.icone-fundo {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 70px;
+  color: rgba(255,255,255,0.1);
+}
+/* 
+-------------------------------------------------------- 
+*/
+
 /* PORTIFÓLIO */
 
 #port-titulo {
@@ -794,7 +891,7 @@ body.sobrenos .animate-foto {
 
     cursor: pointer;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 18px;
 
 }
 .botao-contato a:hover {
@@ -1092,7 +1189,6 @@ body.sobrenos .animate-foto {
     transform: scale(1.1);
     cursor: pointer;
 }
-
 
 /* 
 -------------------------------------------------------- 
