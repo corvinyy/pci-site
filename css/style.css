@@ -756,6 +756,50 @@ body.sobrenos .animate-foto {
     font-weight: bold;
 }
 
+
+/* DIRETORES */
+#direx {
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.d_presidente {
+    margin-top: 30px;
+}
+
+.d_diretores ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+#direx img {
+    border-radius: 20px;
+    border: 5px solid var(--borders-color);
+    transition: all 0.3s ease;
+}
+
+#direx img:hover {
+    border-radius: 20px;
+    border: 5px solid var(--terciary-color);
+    transform: scale(1.05);
+}
+
+#direx p {
+    margin-top: 10px;
+    
+}
+#direx h4 {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
 /* 
 -------------------------------------------------------- 
 */
