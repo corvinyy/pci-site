@@ -1463,6 +1463,39 @@ body.sobrenos .animate-foto {
         font-size: 20px;
     }
 
+
+    #direx {
+        gap: 30px;
+        text-align: center;
+    }
+
+    .d_diretores ul {
+        flex-direction: column; 
+        align-items: center;
+        gap: 40px;
+    }
+
+    .d_presidente img {
+        width: 180px; 
+    }
+
+    .lista_direx img {
+        width: 180px;
+    }
+
+    #direx h1 {
+        font-size: 20px;
+    }
+
+    #direx h4 {
+        font-size: 14px;
+    }
+
+    #direx p {
+        font-size: 15px;
+    }
+
+
     /* ------------------------------------- */
 
     /* PORTIFÓLIO */
@@ -1671,6 +1704,8 @@ body.sobrenos .animate-foto {
         top: 5px;
         right: 10px;
     }
+
+
 }
 
 /* 
@@ -1868,6 +1903,39 @@ body.sobrenos .animate-foto {
 
     .valores-lista p {
         font-size: 20px; 
+    }
+
+
+    #direx {
+        gap: 40px;
+        text-align: center;
+    }
+
+    .d_diretores ul {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 50px 60px; 
+        justify-items: center; 
+    }
+
+    .d_presidente img {
+        width: 200px;
+    }
+
+    .lista_direx img {
+        width: 200px;
+    }
+
+    #direx h1 {
+        font-size: 22px;
+    }
+
+    #direx h4 {
+        font-size: 15px;
+    }
+
+    #direx p {
+        font-size: 16px;
     }
 
     /* ------------------------------------- */
