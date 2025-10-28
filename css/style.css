@@ -843,15 +843,15 @@ body.sobrenos .animate-foto {
 }
 
 .servico {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 .icone-fundo {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 70px;
-  color: rgba(255,255,255,0.1);
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 70px;
+    color: rgba(255,255,255,0.1);
 }
 /* 
 -------------------------------------------------------- 
@@ -1574,6 +1574,59 @@ body.sobrenos .animate-foto {
         border-width: 3px;
         box-shadow: 0 0 6px 1px rgba(0,0,0,0.5);
     }
+
+
+    /* SERVIÇOS */
+    #serv-titulo {
+        padding: 60px 20px;
+        gap: 30px;
+    }
+
+    #serv-titulo h1 {
+        font-size: 28px;
+    }
+
+    .serv-titulo-frase p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .serv-frases ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .serv-frases li {
+        width: 90%;
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+
+    #servicos {
+        grid-template-columns: 1fr; 
+        padding: 60px 8%;
+        gap: 20px;
+    }
+
+    .servico {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .servico h3 {
+        font-size: 16px;
+    }
+
+    .servico p {
+        font-size: 14px;
+    }
+
+    .icone-fundo {
+        font-size: 50px;
+        top: 5px;
+        right: 10px;
+    }
 }
 
 /* 
@@ -1901,5 +1954,56 @@ body.sobrenos .animate-foto {
         width: 500px;
         height: 800px;
         border-width: 4px;
+    }
+
+    /* SERVIÇOS */
+    #serv-titulo {
+        padding: 80px 40px;
+        gap: 40px;
+    }
+
+    #serv-titulo h1 {
+        font-size: 34px;
+    }
+
+    .serv-titulo-frase p {
+        width: 80%;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+    .serv-frases ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .serv-frases li {
+        width: 45%;
+        font-size: 17px;
+        padding: 10px;
+    }
+
+    #servicos {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+        padding: 70px 8%;
+        gap: 25px;
+    }
+
+    .servico {
+        height: 240px;
+        padding: 45px 30px;
+    }
+
+    .servico h3 {
+        font-size: 17px;
+    }
+
+    .servico p {
+        font-size: 15px;
+    }
+
+    .icone-fundo {
+        font-size: 60px;
     }
 }
