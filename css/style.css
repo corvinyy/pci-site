@@ -529,7 +529,7 @@ body.sobrenos #back-header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-image: url("/assets/imgs/banner-concentra-1.jpg");
+    background-image: url("../assets/imgs/banner-concentro-9mb.jpg");
     padding-bottom: 400px;
     gap: 100px;
     flex-direction: column;
@@ -1478,7 +1478,7 @@ body.sobrenos .animate-foto {
     body.sobrenos #back-header {
         background-position: center;
         background-repeat: no-repeat;
-        background-image: url("/assets/imgs/banner-concentra-2.jpg");
+        background-image: url("../assets/imgs/banner-concentro-kb2.jpg");
         background-size: cover; 
         background-attachment: scroll; 
     }
@@ -1973,7 +1973,7 @@ body.sobrenos .animate-foto {
     body.sobrenos #back-header {
         background-position: center;
         background-repeat: no-repeat;
-        background-image: url("/assets/imgs/banner-concentra-2.jpg");
+        background-image: url("../assets/imgs/banner-concentro-kb.jpg");
         background-size: cover; 
         background-attachment: scroll; 
     }
