@@ -67,10 +67,10 @@ PCI-SITE/
 ## 🧩 Páginas
 
 - Home: Apresentação da empresa, parceiros e navegação principal
-- Sobre: Informações sobre a história, MVV da PCI, e movimento MEJ
+- Sobre: Informações sobre a história, MVV da PCI e diretores
 - Serviços: Lista de serviços oferecidos
 - Portifólio: Projetos, cases de sucesso e depoimentos
-- Contato: Formulário de contato e informações de comunicação e localização
+- Contato: Formulário de contato, mapa e informações de comunicação e localização
 
 ---
 
