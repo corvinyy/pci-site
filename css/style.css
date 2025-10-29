@@ -3,7 +3,8 @@
 :root {
     --background-color: #181818;
     --background-color-2: #1e1e1e;
-    --borders-color: #313131;
+    --borders-color: #2c2c2c;
+    --footer-color: #080808;
     --primary-color: #c40001;
     --secondary-color: #6d0000;
     --terciary-color: white;
@@ -528,7 +529,7 @@ body.sobrenos #back-header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-image: url("/assets/imgs/banner-enej.png");
+    background-image: url("/assets/imgs/banner-concentra-1.jpg");
     padding-bottom: 400px;
     gap: 100px;
     flex-direction: column;
@@ -1234,6 +1235,130 @@ body.sobrenos .animate-foto {
     cursor: pointer;
 }
 
+/*
+-------------------------------------------------------- 
+*/
+
+/* FOOTER */
+
+/* geral */
+.footer {
+    background-color: var(--footer-color);
+    color: var(--terciary-color);
+    padding: 40px 20px 20px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+.footer-esquerda,
+.footer-meio,
+.footer-direita {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+/* esquerda */
+.footer-logo-PCI {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.footer-contatos p {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.footer-contatos img {
+    width: 18px;
+    margin-right: 8px;
+}
+
+/* meio */
+.footer-hora-local p {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.footer-hora-local img {
+    width: 18px;
+    margin-right: 8px;
+}
+
+.redes-sociais a {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.footer-redes-sociais {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-redes-sociais a img {
+    width: 30px;
+    margin: 8px 8px 0 0;
+    transition: opacity 0.3s;
+}
+
+.footer-redes-sociais a img:hover {
+    opacity: 0.7;
+}
+
+/* direita */
+.footer-direita ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-direita ul li {
+    margin: 8px 0;
+}
+
+.footer-direita a {
+    color: var(--terciary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-direita a:hover {
+    color: var(--primary-color);
+}
+
+/* copyright */
+.copyright {
+    text-align: center;
+    border-top: 2px solid var(--borders-color);
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
 /* 
 -------------------------------------------------------- 
 */
@@ -1353,7 +1478,7 @@ body.sobrenos .animate-foto {
     body.sobrenos #back-header {
         background-position: center;
         background-repeat: no-repeat;
-        background-image: url("/assets/imgs/banner-enej.png");
+        background-image: url("/assets/imgs/banner-concentra-2.jpg");
         background-size: cover; 
         background-attachment: scroll; 
     }
@@ -1706,7 +1831,53 @@ body.sobrenos .animate-foto {
     }
 
 
+    /* ------------------------------------------------------ */
+
+    /* FOOTER */
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-esquerda,
+    .footer-meio,
+    .footer-direita {
+        margin: 20px 0;
+        min-width: auto;
+    }
+
+    .footer-logo-PCI {
+        width: 200px;
+    }
+
+    .footer-contatos p,
+    .footer-hora-local p {
+        justify-content: center;
+    }
+
+    .footer-redes-sociais {
+        justify-content: center;
+    }
+
+    .footer-direita ul {
+        padding: 0;
+    }
+
+    .footer-direita a {
+        font-size: 16px;
+    }
+
+    .footer-redes-sociais a img {
+        width: 28px;
+        margin: 0 5px;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
 }
+
 
 /* 
 -------------------------------------------------------- 
@@ -1802,7 +1973,7 @@ body.sobrenos .animate-foto {
     body.sobrenos #back-header {
         background-position: center;
         background-repeat: no-repeat;
-        background-image: url("/assets/imgs/banner-enej.png");
+        background-image: url("/assets/imgs/banner-concentra-2.jpg");
         background-size: cover; 
         background-attachment: scroll; 
     }
@@ -2118,4 +2289,8 @@ body.sobrenos .animate-foto {
     .icone-fundo {
         font-size: 60px;
     }
+
+    /* ------------------------------------------------------ */
+    /* FOOTER */
+    
 }
