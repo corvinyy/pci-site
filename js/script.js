@@ -53,8 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const sobreNosObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    document.querySelector('.apt-infos').classList.add('animate-titulo');
-                    document.querySelector('.apt-foto').classList.add('animate-foto');
+                    document.querySelector('.sobre-apt-infos').classList.add('animate-titulo');
                     observer.disconnect(); 
                 }
             });
