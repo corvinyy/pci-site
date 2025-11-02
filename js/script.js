@@ -108,3 +108,9 @@ function irParaSlide(index) {
 mostrarSlide(0);
 
 setInterval(proximoSlide, 6000);
+
+/* (GERAL) BOTAO VOLTAR AO TOPO */
+document.querySelector('.scroll').addEventListener('click', function (event) {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
