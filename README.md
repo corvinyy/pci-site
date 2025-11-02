@@ -2,7 +2,8 @@
 
 Este repositório contém o código-fonte do site institucional da **Projetos Consultoria Integrada (PCI)**, uma empresa júnior comprometida com a excelência em consultoria e soluções integradas para empresas e organizações.
 
-![Preview of the current progress](./assets/imgs/previews/pv1.png)
+![Preview of the current progress](./assets/imgs/previews/pv2.png)
+![Preview of the current progress](./assets/imgs/previews/pv3.png)
 ---
 
 ## 📁 Estrutura do Projeto
