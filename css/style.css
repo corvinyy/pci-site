@@ -1860,7 +1860,6 @@ body.sobrenos .animate-texto {
     }
 
     .apt-botao a {
-        width: 70%;
         max-width: 220px;
         padding: 15px;
         font-size: 16px;
@@ -2095,7 +2094,8 @@ body.sobrenos .animate-texto {
     }
 
     .depo-item {
-        width: 400px;
+        height: 370px;
+        width: 450px;
         padding: 30px 25px;
     }
 
@@ -2210,7 +2210,7 @@ body.sobrenos .animate-texto {
     
 }
 
-
+/* BOTAO PARA VOLTAR AO TOPO */
 .scroll {
     position: fixed;
     left: 20px;
@@ -2233,3 +2233,12 @@ body.sobrenos .animate-texto {
 .scroll:hover {
     background-color: var(--primary-color);
 }
+
+/* BOTAO DO WHATSAPP */
+.botao-wpp {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    z-index: 1000;
+}
+
