@@ -483,7 +483,7 @@ section {
 
 .carrossel {
     padding: 10px 0px;
-    max-width: 800px;
+    max-width: 750px;
     margin: 0 auto;
     overflow: hidden;
     border: 6px solid var(--borders-color);
@@ -541,28 +541,33 @@ body.sobrenos header {
     border-radius: 15px;
 }
 body.sobrenos #back-header {
+    position: relative;
     display: flex;
     margin: 0 auto;
-    padding-bottom: 200px;
-    gap: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-image: url("/assets/imgs/biblioteca.jpg");
+    padding-bottom: 130px;
+    gap: 90px;
     flex-direction: column;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
 }
 
 body.sobrenos #back-header::before {
     content: "";
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4); 
-    z-index: -1;
+    
 }
 
 body.sobrenos #prazer-pci {
     text-align: center;
-    font-size: 30px;        
+    font-size: 30px;    
+    z-index: 2;    
 }
 
 body.sobrenos #apresentacao {
@@ -1445,7 +1450,11 @@ body.sobrenos .animate-texto {
     }
 
     body.sobrenos #back-header {
-        padding-bottom: 165px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../assets/imgs/biblioteca.jpg");
+        background-size: cover; 
+        background-attachment: scroll; 
         
     }
 
@@ -1911,7 +1920,7 @@ body.sobrenos .animate-texto {
     }
 
     .carrossel {
-        max-width: 85%;
+        max-width: 78%;
     }
 
     .carrossel ul {
@@ -1934,7 +1943,11 @@ body.sobrenos .animate-texto {
     }
 
     body.sobrenos #back-header {
-        padding-bottom: 170px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../assets/imgs/biblioteca.jpg");
+        background-size: cover; 
+        background-attachment: scroll; 
     }
 
     body.sobrenos #prazer-pci {
