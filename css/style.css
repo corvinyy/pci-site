@@ -866,6 +866,7 @@ body.sobrenos .animate-texto {
     transition: all 0.3s ease;
     width: 100%;
     height: 260px;
+    text-decoration: none;
 }
 
 .servico h3 {
