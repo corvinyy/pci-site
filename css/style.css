@@ -547,7 +547,7 @@ body.sobrenos #back-header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-image: url("/assets/imgs/biblioteca.jpg");
+    background-image: url("../assets/imgs/biblioteca.jpg");
     padding-bottom: 130px;
     gap: 90px;
     flex-direction: column;
