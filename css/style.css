@@ -142,6 +142,43 @@ header .icon-telefone:hover {
     cursor: pointer;
 }
 
+nav ul .solucoes {
+    position: relative;
+    display: inline-block;
+    height: 27px;
+}
+
+nav ul .solucoes .botao-solucoes {
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav ul .solucoes-info {
+    display: none;
+    position: absolute;
+    background-color: var(--terciary-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav ul .solucoes:hover .solucoes-info {
+    display: block;
+}
+
+nav ul .solucoes-info a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul .solucoes-info a:hover {
+    background-color: #ddd;
+}
+
 /* (HEADER) Responsividade para mobile */
 
 .logo-PCI {
@@ -217,6 +254,10 @@ header .icon-telefone:hover {
         pointer-events: 1;
         transform: translateX(0);
    }
+
+    nav ul .solucoes {
+        height: 25px;
+    }
 
 }
 
@@ -762,7 +803,7 @@ body.sobrenos .animate-texto {
 -------------------------------------------------------- 
 */
 
-/* SERVIÇOS */
+/* SOLUCOES */
 
 #serv-titulo {
     flex-direction: column;
@@ -805,7 +846,7 @@ body.sobrenos .animate-texto {
 
 #servicos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     gap: 30px;
     padding: 80px 10%;
     background-color: var(--terciary-color);
@@ -1404,7 +1445,7 @@ body.sobrenos .animate-texto {
     }
 
     body.sobrenos #back-header {
-        padding-bottom: 150px;
+        padding-bottom: 165px;
         
     }
 
