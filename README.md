@@ -85,6 +85,15 @@ PCI-SITE/
 - Contato: Formulário de contato, mapa e informações de comunicação e localização
 
 ---
+## 💡 CURIOSIDADES
+- Reponsividade
+- Botão de Whatsapp que leva direto ao contato da empresa com mensagem automática
+- Botão para voltar ao topo da página
+- Carrosseís 
+- Botão que leva à nossa cartela de serviços
+- Google Maps do local da empresa
+
+---
 
 ## 🚀 Como Rodar o Projeto Localmente
 
@@ -93,7 +102,7 @@ Você pode abrir o projeto localmente de maneira bem simples:
 
 - 1. Faça o clone do repositório: https://github.com/corvinyy/projetosintegrada.git
 - 2. Acesse a pasta do projeto: ``cd projetosintegrada``
-- 3. Dê duplo clique no arquivo ``index.html`` ou utilize a extensão ``Live Server``
+- 3. Dê duplo clique no arquivo ``index.html`` ou utilize a extensão ``Live Server`` no VSCode
 
 ---
 
@@ -106,6 +115,15 @@ Você pode abrir o projeto localmente de maneira bem simples:
 
 ---
 
+## 🔹 ICONS - CRÉDITOS
+
+<div> 
+    Icons feitos por
+    <a href="https://www.flaticon.com/br/autores/pod-gladiator" title="POD Gladiator"> POD Gladiator </a>  
+    e <a href="https://www.flaticon.com/br/autores/ilham-fitrotul-hayat" title="Ilham Fitrotul Hayat"> Ilham Fitrotul Hayat </a>do <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a>
+</div>
+
+---
 ## 📝 Licença
 
 Este projeto é de uso institucional da Projetos Consultoria Integrada. Direitos reservados © 2025.
