@@ -14,17 +14,19 @@ PCI-SITE/
 ├── assets/ # Imagens, ícones e logos
 │ ├── icons/
 │ ├── img/
-│ └── logo/
+│ └── logos/
 ├── css/
 │ └── style.css # Estilos do site
 ├── js/
 │ └── script.js # Scripts JS do site
 ├── pages/ # Páginas internas do site
 │ ├── sobre.html
-│ ├── servicos.html
-│ ├── cases.html
+│ ├── consultorias.html
+│ ├── arquitetura.html
+│ ├── portfolio.html
 │ └── contato.html
 ├── index.html # Página inicial (Home)
+└── CNAME
 └── README.md
 ```
 
@@ -62,6 +64,14 @@ PCI-SITE/
     style="padding-right: 10px;" 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" 
 />
+<img 
+    align="left" 
+    alt="JavaScript" 
+    title="JavaScript"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg" 
+/>
 
 <br></br>
 ---
@@ -69,15 +79,27 @@ PCI-SITE/
 
 - Home: Apresentação da empresa, parceiros e navegação principal
 - Sobre: Informações sobre a história, MVV da PCI e diretores
-- Serviços: Lista de serviços oferecidos
+- Consultoria: Lista de soluções de consultorias
+- Arquitetura: Lista de soluções de arquitetura
 - Portifólio: Projetos, cases de sucesso e depoimentos
 - Contato: Formulário de contato, mapa e informações de comunicação e localização
 
 ---
 
+## 🚀 Como Rodar o Projeto Localmente
+
+Como o site é 100% front-end (HTML, CSS e JS), não há necessidade de servidor backend.
+Você pode abrir o projeto localmente de maneira bem simples:
+
+- 1. Faça o clone do repositório: https://github.com/corvinyy/projetosintegrada.git
+- 2. Acesse a pasta do projeto: ``cd projetosintegrada``
+- 3. Dê duplo clique no arquivo ``index.html`` ou utilize a extensão ``Live Server``
+
+---
+
 ## 📫 Contato
 
-- 🌐 Site: https://corvinyy.github.io/projetosintegrada/
+- 🌐 Site: https://projetosintegrada.com.br/
 - 📞 Telefone: (61) 99853-8516
 - 📧 E-mail: contato@projetosintegrada.com.br
 - 📍 Localização: SEPN 707/907, Ceub - Asa Norte, Bloco 2, Sala 2311 CEP: 70790-075
